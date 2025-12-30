@@ -1,0 +1,44 @@
+implement A simple associative array $weather_icons maps your status to the correct icon. You can later replace the $weather = 'sunny'; line with actual data fetched from a weather API like OpenWeatherMap.
+
+implement sms messaging api through daraja
+
+make this into a full desktop webapp
+
+
+
+<html lang="en" class="<?= ($_SESSION['theme'] ?? 'light') == 'dark' ? 'dark' : '' ?>">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus | <?= ucfirst($page) ?></title>
+    
+    <script>
+        tailwind.config = { darkMode: 'class' }
+    </script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Smooth transitions for theme switching */
+        html, body { transition: background-color 0.3s ease, color 0.3s ease; }
+        .dark body { background-color: #0f172a !important; }
+        /* Add other dark mode specific overrides here if needed */
+    </style>
+</head>
+
+
+
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+require_once 'config.php'; 
+// protect_page(); 
+
+ Settings - API Key
+
+Please record and keep this API key safe. You will not see it from this dashboard on subsequent visits.
+
+atsk_1be80b42dcee76a160d28b8c3c5dcefc0d2af125c01c55f1dd0d460970a5bba09f7c0337
