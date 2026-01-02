@@ -23,8 +23,8 @@ function get_weather_data($city, $apiKey) {
 }
 
 // Configuration
-$apiKey = "6c87d3b90f47ade9246e727dfd0e9fc6"; 
-$city = "Nairobi"; 
+$apiKey = ""; //your key
+$city = ""; //your city 
 $weatherData = get_weather_data($city, $apiKey);
 
 // User Data for conditional display (Role/Name/Pic)
@@ -130,4 +130,5 @@ $is_dashboard = (basename($_SERVER['PHP_SELF']) == 'dashboard.php');
             mobileMenu.classList.toggle('hidden');
         });
     }
+
 </script>
